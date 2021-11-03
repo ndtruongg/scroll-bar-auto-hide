@@ -1,1 +1,1 @@
-# scroll-bar-auto-hide
+# scrollbar-auto-hide

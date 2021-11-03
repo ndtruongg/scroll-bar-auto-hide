@@ -1,7 +1,7 @@
 <template>
-  <div class="scroll-bar-auto-hide">
+  <div class="scrollbar-auto-hide">
     <div
-      class="scroll-bar-auto-hide__content"
+      class="scrollbar-auto-hide__content"
       :style="contentStyle"
       @scroll="scrollEvent"
     >
@@ -23,7 +23,7 @@
 <script>
 export default {
   props: ['contentStyle', 'scrollBarStyle', 'trackStyle'],
-  name: 'ScrollBarAutoHide',
+  name: 'ScrollbarAutoHide',
   data() {
     return {
       scrollBarHeight: 0,
@@ -31,10 +31,10 @@ export default {
     }
   },
   mounted() {
-    const scrollBox = document.querySelector('.scroll-bar-auto-hide')
+    const scrollBox = document.querySelector('.scrollbar-auto-hide')
     let height = scrollBox.offsetHeight
     const scrollContent = scrollBox.querySelector(
-      '.scroll-bar-auto-hide__content'
+      '.scrollbar-auto-hide__content'
     )
     let scrollHeight = scrollContent.scrollHeight
     this.scrollBarHeight = parseInt((height * 100) / scrollHeight)
@@ -56,7 +56,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.scroll-bar-auto-hide {
+.scrollbar-auto-hide {
   position: relative;
 
   &:hover {
