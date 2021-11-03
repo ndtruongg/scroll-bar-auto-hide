@@ -1,28 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <scroll-bar-auto-hide
+      :contentStyle="{ maxHeight: '600px' }"
+      :scrollBarStyle="{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }"
+      :trackStyle="{ borderRadius: '10px' }"
+    >
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+    </scroll-bar-auto-hide>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ScrollBarAutoHide from './ScrollBarAutoHide.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { ScrollBarAutoHide },
+  name: 'App'
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.content {
+  height: 300px;
+
+  &:nth-child(1) {
+    background-color: blue;
+  }
+  &:nth-child(2) {
+    background-color: green;
+  }
+  &:nth-child(3) {
+    background-color: red;
+  }
+  &:nth-child(4) {
+    background-color: brown;
+  }
+  &:nth-child(5) {
+    background-color: black;
+  }
+  &:nth-child(6) {
+    background-color: yellow;
+  }
 }
 </style>

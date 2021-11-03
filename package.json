@@ -1,7 +1,10 @@
 {
-  "name": "custom-scroll",
+  "name": "scroll-bar-auto-hide",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "src/index.js",
+  "keywords": ["scrollbar, scrollbar custom", "scrollbar auto hide", "vue", "vuejs", "vuejs scroll bar"],
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -18,6 +21,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.2.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
